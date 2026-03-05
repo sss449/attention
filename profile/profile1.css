@@ -1,0 +1,60 @@
+.back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px; /* Скругленные, но не круги */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+    transition: all 0.2s; /* Легкая анимация, если хочешь ее оставить */
+    position: fixed;
+}
+
+.back-button:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.back-button.outline:hover {
+    background-color: #f5f5f5;
+    border-color: #999;
+}
+  
+
+
+.back-button:hover {
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.back:hover {
+    background-color: #ffffff; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.back:active {
+    background-color: #000000; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;             /* Убираем стандартные отступы браузера */
+    display: grid;         /* Включаем сетку */
+    place-items: center;   /* Центрируем содержимое по обеим осям */
+    height: 100vh;
+    font-size: 20px;
+  
+  
+  
+}
+ 
