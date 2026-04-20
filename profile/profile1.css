@@ -49,10 +49,10 @@
 }
 
 .text {
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 0;             /* Убираем стандартные отступы браузера */
-    display: grid;         /* Включаем сетку */
-    place-items: center;   /* Центрируем содержимое по обеим осям */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;           
+    display: grid;        
+    place-items: center; 
     height: 100vh;
     font-size: 20px;
   

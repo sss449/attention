@@ -1,6 +1,4 @@
-
- 
- body {
+body {
   margin: 0;
   padding: 0;
 
@@ -120,16 +118,225 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 4px rgba(0, 0, 0, 0.3);
 }
+.list {
+    width: 90%;
+    max-width: 360px;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+.hidden-input {
+    display: none;
+}
+.img-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px; 
+    width: 100%;
+    background-color: #f0f0f0; 
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border: 2px dashed #ddd; 
+}
+.img-card:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.te {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+     color: #666;
+    pointer-events: none;
+} 
+.des {
+ width: 100%;
+ padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 14px;
+   outline: none;
+   box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+.des:focus {
+    border-color: #666;
+}
+
+.time-card input {
+    display: none; 
+}
 
 
+.schedule-section {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.section-title {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.time-grid {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.time-card span {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid #ddd;
+}
 
 
+.time-card input:checked + span {
+    background: #000000;
+    color: #fff;
+    border-color: #000000;
+}
+
+.boost-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+   
+    width: 100%; 
+    max-width: 100%; 
+    
+    max-height: 88px; 
+    overflow-y: auto;
+    padding-right: 8px; 
+}
+
+.boost-grid::-webkit-scrollbar {
+    width: 4px;
+}
+.boost-grid::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+}
 
 
+.boost-card input {
+    display: none;  
+}
+
+.boost-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: sans-serif;
+}
+
+.boost-time {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+
+.boost-time small {
+    color: #000000; 
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.boost-price {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+}
 
 
+.boost-card input:checked + .boost-info {
+    background: #e7f1ff;
+    border-color: #000000;
+    box-shadow: 0 2px 5px rgba(0,123,255,0.1);
+}
+
+.boost-card input:checked + .boost-info .boost-time {
+    color: #000000;
+} 
+
+.publish {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.go {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Кнопка на всю ширину смотрится лучше */
+    transition: transform 0.2s, background 0.2s;
+}
+
+.go:hover {
+    background: #333;
+    transform: scale(1.02);
+}
+
+.go:focus {
+    outline: none;
+}
+.overlay {
+    
+    opacity: 0;
+    visibility: hidden; 
+    
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); 
+    z-index: 1000;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+   
+    transition: all 0.3s ease-in-out;
+}
 
 
+.overlay .modal-content {
+    transform: scale(0.8); 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Когда окно активно */
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+     display: flex !important;
+}
+
+.overlay.active .modal-content {
+    transform: scale(1);
+}
 
 
 

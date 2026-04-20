@@ -5,38 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>attention</title>
 </head>
-
 <body> 
-    
     <link rel="stylesheet" href="style.css">
-    
     <h1 class="logo">attention</h1>
-
-
     <div class="search">
         <input type="search" class="search2" placeholder="Поиск">
         <button class="N">Найти</button>
     </div>
-
     <div>
-        <button class="new">+</button>
+        <button class="new"  id="addPostBtn">+</button>
     </div>
-
     <div>
-
         <a href="./profile/profile1.html">
-
             <button class="p">P</button>
         </a>
     </div>
-       
     <div class="block"> 
-
-        
     </div>
-    
+    <div class="overlay">
+        <div class="modal-content">
+         <div class="list">
+          <input type="file" id="file-upload" class="hidden-input" accept="image/*">
+     <label for="file-upload" id="preview-label" class="img-card">
+    <span id="upload-text" class="te"></span>
+</label>
+     <input type="text" class="des" placeholder="Описание"> 
+    <div class="schedule-section">
+    <p class="section-title">Срок публикации</p>
+    <div class="time-grid">
+        <label class="time-card">
+            <input type="radio" name="post-time" value="1">
+            <span>1ч</span>
+        </label>
+        <label class="time-card">
+            <input type="radio" name="post-time" value="3">
+            <span>3ч</span>
+        </label>
+        <label class="time-card">
+            <input type="radio" name="post-time" value="24" checked>
+            <span>1д</span>
+        </label>
+        <label class="time-card">
+            <input type="radio" name="post-time" value="72">
+            <span>3д</span>
+        </label>
+         <label class="time-card">
+            <input type="radio" name="post-time" value="240">
+            <span>10д</span>
+        </label>
+         <label class="time-card">
+            <input type="radio" name="post-time" value="480">
+            <span>20д</span>
+        </label>
+    </div>
+    <div class="boost">
+ <p class="section-title">Пакет продвижения (Буст)</p>
+    <div class="boost-grid">
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="0" checked>
+            <div class="boost-info">
+                <span class="boost-time">Без буста</span>
+                <span class="boost-price">0₽</span>
+            </div>
+        </label>
+        
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="1">
+            <div class="boost-info">
+                <span class="boost-time">1 час</span>
+                <span class="boost-price">99₽</span>
+            </div>
+        </label>
 
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="3">
+            <div class="boost-info">
+                <span class="boost-time">3 часа</span>
+                <span class="boost-price">297₽</span>
+            </div>
+        </label>
 
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="10">
+            <div class="boost-info">
+                <span class="boost-time">10 часов <small>-10%</small></span>
+                <span class="boost-price">891₽</span>
+            </div>
+        </label>
+
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="24">
+            <div class="boost-info">
+                <span class="boost-time">1 день <small>-15%</small></span>
+                <span class="boost-price">2 020₽</span>
+            </div>
+        </label>
+
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="72">
+            <div class="boost-info">
+                <span class="boost-time">3 дня <small>-20%</small></span>
+                <span class="boost-price">5 702₽</span>
+            </div>
+        </label>
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="240">
+            <div class="boost-info">
+                <span class="boost-time">10 дней <small>-30%</small></span>
+                <span class="boost-price">16 632₽</span>
+            </div>
+        </label>
+        <label class="boost-card">
+            <input type="radio" name="boost-plan" value="480">
+            <div class="boost-info">
+                <span class="boost-time">20 дней <small>-40%</small></span>
+                <span class="boost-price">28 512₽</span>
+            </div>
+        </label>
+    </div>
+    </div>
+    <div class="publish">
+       <button class="go">Опубликовать</button>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+<script src="./sсript.js"></script>
 </body>
 </html>
 
