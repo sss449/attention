@@ -9,8 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <h1 class="logo">attention</h1>
     <div class="search">
+        <div class="search-row">
         <input type="search" class="search2" placeholder="Поиск">
         <button class="N">Найти</button>
+        </div>
+        <div class="resu" id="ResuBTN">
+<button class="re" id="reBTN">Рекоминдации</button>
+<button class="su" id="suBTN">Мои авторы</button>
+    </div>
     </div>
     <div>
         <button class="new"  id="addPostBtn">+</button>
@@ -135,6 +141,51 @@
 </div>
         </div>
     </div>
+
+<div id="feed"></div>
+
+
+    <div id="form">
+        <div class="post-card">
+    <div class="info">
+        <a href="" class="nik">name</a>
+        <time datetime="PT1H" class="time">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16 14" />
+</svg>
+            1h</time>
+
+        <div class="butt"> 
+            <button class="like">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="18 15 12 9 6 15" />
+</svg>
+            </button>
+            <span class="like-count">0</span>
+            <button class="diz">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="6 9 12 15 18 9" />
+</svg>
+            </button>
+        </div>
+        <span class="views">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+  <circle cx="12" cy="12" r="3" />
+</svg>
+3</span>
+
+    </div>
+    <div class="post-image">
+        <img src="Снимок экрана 2026-03-14 140401.png" alt="">
+    </div>
+    <div class="description">
+        <p class="post-description">*Описание происходящего на фото*</p>
+    </div>
+</div>
+    </div>
+   
 <script src="./sсript.js"></script>
 </body>
 </html>
